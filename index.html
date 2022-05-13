@@ -82,13 +82,10 @@
 
   </script>
   <script>
-    // 获取前一天
-    const date_hesuan = new Date(new Date().getTime() - 86400000).toLocaleString().replaceAll('/', '-').substring(0, 10)
-
-
     /**
      * options:
      * name
+     * pspNo
      */
     window.onload = function () {
       var userName = getUrlParam('name') || '舟'
